@@ -1,0 +1,19 @@
+﻿{
+    "date":  "2026-11-07",
+    "platform":  "ZX Next",
+    "version":  "1.8",
+    "binBytes":  16316,
+    "tapBytes":  16396,
+    "address":  49152,
+    "endExclusive":  65468,
+    "reserve":  68,
+    "biosVersion":  "2.1",
+    "biosBytes":  698,
+    "terminalVersion":  "1.1",
+    "terminalBytes":  5314,
+    "atRegressionCount":  152,
+    "backendScenarioCount":  213,
+    "physicalHardwareTested":  false,
+    "clockOffset":  "user-defined -12..+14",
+    "elmbSntpFixGrowth":  0
+}

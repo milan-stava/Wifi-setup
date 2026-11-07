@@ -1,0 +1,18 @@
+﻿{
+    "outputs":  [
+                    {
+                        "sha256":  "A0504E890CB74913FA927A08B4593B2773D1D05336989E8974D5692C9DA8E7DF",
+                        "source":  "wifi_setup_next18.tap",
+                        "file":  "wifi_setup_next18.tap"
+                    },
+                    {
+                        "sha256":  "005FF9BCC597EEDA4B61A2D7A7697BF152F12E10018A38076870ADE18AFCB053",
+                        "source":  "wifi_setup_next18.bin",
+                        "file":  "wifi_setup_next18.bin"
+                    }
+                ],
+    "directory":  ".",
+    "targets":  [
+                    "wifi_setup_next"
+                ]
+}

@@ -1,0 +1,42 @@
+﻿[
+    {
+        "sha256":  "F21AD109CD0D0779F7C652AEBBACA9EE87A13A6BBBEDB5800303BCE156E8C3FF",
+        "path":  "1_W1250.BIN"
+    },
+    {
+        "sha256":  "CB68D79796791858A4C9A3D5BA8B3F453CED08B65040E725C64AB68DEB0FCB7A",
+        "path":  "inkey.a80"
+    },
+    {
+        "sha256":  "68A68256CF22283B41F2FEC1536C2A8311168AA80B109FF296E5839F668DD979",
+        "path":  "keyboard_and_print.asm"
+    },
+    {
+        "sha256":  "1E9AC919E1A4037CEC0728274256A132B3326C9718B4FB68949753B72BC069D7",
+        "path":  "systemky.bin"
+    },
+    {
+        "sha256":  "E7F75C124D6358980B73F3F37253DF12C35C3F4B2756B6F1698AEC55055483AC",
+        "path":  "terminal11_el_mb_setup.bin"
+    },
+    {
+        "sha256":  "71E828F70D2A8C3D8CC6589F50988A629B2FFC3EE33C278D7A4B48A6E38EE0EC",
+        "path":  "WifiBios21_MB_EL.cod"
+    },
+    {
+        "sha256":  "C48EC325644C33F308E89804EB843D1981386FFE2DFC4AE3600D9AE804988325",
+        "path":  "wifi_setup_flash.asm"
+    },
+    {
+        "sha256":  "6E8DDE8DDD1CF791325C0860650B0557664D5C080C3E2E66F1BC41A88FA29944",
+        "path":  "wifi_setup_flash_debug.asm"
+    },
+    {
+        "sha256":  "4A08C476B4B051090342F4AFCA3B978D1FB3BA32E1910E0546F97ADB22F0728E",
+        "path":  "wifi_setup_main.asm"
+    },
+    {
+        "sha256":  "7047069225E502BD853AF1F595AD11A82F80EFC42F90C58980A0F290151238F0",
+        "path":  "wifi_setup_standalone.asm"
+    }
+]

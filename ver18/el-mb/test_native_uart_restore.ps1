@@ -1,0 +1,7 @@
+$ErrorActionPreference='Stop'
+. (Join-Path $PSScriptRoot 'el_restore_cpu.ps1')
+$sy=[Collections.Generic.Dictionary[string,int]]::new();Get-Content (Join-Path $PSScriptRoot 'wifi_setup_standalone.sym')|ForEach-Object{if($_ -match '^v0\.([^:]+): EQU 0x([0-9A-Fa-f]+)'){$sy[$matches[1]]=[Convert]::ToInt32($matches[2],16)}}
+$bin=[IO.File]::ReadAllBytes((Join-Path $PSScriptRoot 'wifi_setup_standalone18'))
+foreach($mb in @($true,$false)){foreach($missing in @($false,$true)){$c=[ElRestoreCpu]::new([byte[]]@(),$sy,$sy['bios_start']);[Array]::Copy($bin,0,$c.M,0xC000,$bin.Length);$c.Mb=$mb;$c.SP=0x6B00;$c.Uart=0;$c.ElRestoreScenario=$true;$c.SpeedCode=16;$c.NoBootReady=$missing;$c.Run('bios_start');$c.IX=$sy['flag1'];$c.M[$sy['flag1']+7]=16;$c.Run('ap_restore_default');if($c.ModuleBaud -ne 3456000 -or $c.SpeedCode -ne 16 -or $c.M[$sy['flag1']+7] -ne 16){throw 'Native BIOS/module did not restore speed 16'};if(-not ($c.Commands -contains "AT+UART_CUR=3456000,8,1,0,0`r`n")){throw 'Wrong actual UART command'};$c.Run('get_baud');if($c.A -ne 16 -or $c.Carry()){throw 'Actual BIOS readback differs'} }
+}
+'PASS: native EL/MB BIOS plus actual setup UART builder restored host AND module to 3456000 (index 16), with and without ready event.'

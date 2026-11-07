@@ -1,0 +1,30 @@
+﻿{
+    "outputs":  [
+                    {
+                        "sha256":  "90DB17F529B6E73CF29142583109D5AF19803EB7D040E2F599BEDE97B280BF50",
+                        "source":  "wifi_setup_standalone18.tap",
+                        "file":  "wifi_setup_standalone18.tap"
+                    },
+                    {
+                        "sha256":  "03A999A1ED03439D49FB3A57490CBFB10CFBFFF4D1BBA21455D115722D9221FC",
+                        "source":  "wifi_setup_standalone18",
+                        "file":  "wifi_setup_standalone18.bin"
+                    },
+                    {
+                        "sha256":  "D4334151EF8B022B7A17B7A4482185CC061D71D0B286563A89D1EE2B0C6C00D1",
+                        "source":  "wifi_setup_flash18",
+                        "file":  "wifi_setup_flash18.bin"
+                    },
+                    {
+                        "sha256":  "D4334151EF8B022B7A17B7A4482185CC061D71D0B286563A89D1EE2B0C6C00D1",
+                        "source":  "wifi_setup_flash18_debug",
+                        "file":  "wifi_setup_flash18_debug.bin"
+                    }
+                ],
+    "directory":  ".",
+    "targets":  [
+                    "wifi_setup_standalone",
+                    "wifi_setup_flash",
+                    "wifi_setup_flash_debug"
+                ]
+}

@@ -50,8 +50,6 @@ Direct, version-specific links suitable for use on other websites:
 | ZX Next standalone TAP | [wifi_setup_next18.tap](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/zx-next/runable/wifi_setup_next18.tap) | 16396 |
 | EL/MB standalone BIN | [wifi_setup_standalone18.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/el-mb/runable/wifi_setup_standalone18.bin) | 16184 |
 | EL/MB flash BIN | [wifi_setup_flash18.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/el-mb/runable/wifi_setup_flash18.bin) | 16228 |
-| EL/MB debug BIN | [wifi_setup_flash18_debug.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/el-mb/runable/wifi_setup_flash18_debug.bin) | 16228 |
-| ZX Next standalone BIN | [wifi_setup_next18.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/zx-next/runable/wifi_setup_next18.bin) | 16316 |
 
 [Complete v1.8 package ZIP (sources and binaries)](https://github.com/milan-stava/Wifi-setup/archive/refs/tags/v1.8.zip).
 

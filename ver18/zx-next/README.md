@@ -14,3 +14,7 @@ ROM tests need user-supplied ROM/snapshot files (not included).
 
 Includes BIOS 2.1 and Terminal 1.1. AP recovery restarts ESP and can use temporary 115200 baud.
 Speed indices 0..14 selectable. GMT: -12..+14; EDIT cancels; RTC result waits for key. EL/MB AP-return change not yet ported to Next.
+
+## ESP AT firmware requirement
+
+For successful RTC time and date synchronization, the ESP module must run AT firmware 1.4.0.0 or newer with SNTP support.

@@ -16,3 +16,7 @@ ROM tests need user-supplied ROM/snapshot files (not included).
 
 Includes BIOS 2.1 and Terminal 1.1. AP recovery restarts ESP and can use temporary 115200 baud.
 After acknowledging AP result: terminal return path st1. Flash/debug intentionally match for NMI debugging.
+
+## ESP AT firmware requirement
+
+For successful RTC time and date synchronization, the ESP module must run AT firmware 1.4.0.0 or newer with SNTP support.

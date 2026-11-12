@@ -2,6 +2,10 @@
 
 Current release: **1.8**, with separate `ver18/el-mb` and `ver18/zx-next` variants.
 
+## ESP AT firmware requirement
+
+For successful RTC time and date synchronization, the ESP module must run AT firmware 1.4.0.0 or newer with SNTP support.
+
 ## What's New in 1.8
 
 ### Common improvements
@@ -51,6 +55,6 @@ Direct, version-specific links suitable for use on other websites:
 | EL/MB standalone BIN | [wifi_setup_standalone18.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/el-mb/runable/wifi_setup_standalone18.bin) | 16184 |
 | EL/MB flash BIN | [wifi_setup_flash18.bin](https://raw.githubusercontent.com/milan-stava/Wifi-setup/v1.8/ver18/el-mb/runable/wifi_setup_flash18.bin) | 16228 |
 
-[Complete v1.8 package ZIP (sources and binaries)](https://github.com/milan-stava/Wifi-setup/archive/refs/tags/v1.8.zip).
+[Complete v1.8 package ZIP (sources and binaries)](https://github.com/milan-stava/Wifi-setup/archive/refs/tags/v1.8-docs.1.zip).
 
 The links target the existing release tag, so later development on main does not change these downloads.

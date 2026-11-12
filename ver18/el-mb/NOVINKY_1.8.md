@@ -1,5 +1,7 @@
 # WiFi Setup 1.8 - changes from 1.7
 
+For successful RTC time and date synchronization, the ESP module must run AT firmware 1.4.0.0 or newer with SNTP support.
+
 1. Empty passwords are accepted, allowing connections to open WiFi networks.
 2. PING is available through I to test reachability of an IP address or hostname.
 3. AT communication, response handling, timeouts, parsing, escaping, and buffer handling were corrected. Trailing password spaces are preserved.

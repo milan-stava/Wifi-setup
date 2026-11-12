@@ -29,6 +29,8 @@ Run assembly.bat with SjASMPlus 1.20.3. build.ps1 copies verified outputs to run
 
 ## RTC and SNTP
 
+For successful RTC time and date synchronization, the ESP module must run AT firmware 1.4.0.0 or newer with SNTP support.
+
 S first asks for a GMT offset from -12 to +14. Examples: 1 for standard time, 2 for daylight-saving time, or -1. A leading plus sign is allowed. Invalid input is requested again; EDIT cancels and returns to the menu. Daylight-saving changes are not automatic.
 
 The offset is sent in AT+CIPSNTPCFG and the returned AT+CIPSNTPTIME value is parsed. Seven date/time registers are written to a DS1307 at I2C address 68 through ports 103B/113B. The ZX signature used by RTC.SYS is written at 3E/3F after a successful clock write; other RTC RAM is preserved.
